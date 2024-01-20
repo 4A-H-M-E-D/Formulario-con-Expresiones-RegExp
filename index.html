@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Expresiones Regulares en JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <form class="formulario mt-5">
+            <fieldset class="border border-info p-3 h5">
+                <legend>Formulario</legend>
+
+                <label class="mb-2 mt-4" for="usuario">Usuario:</label>
+                <input class="form-control form-control-lg" type="text" id="usuario" name="usuario" placeholder="Nombre Usuario..." autocomplete="off">
+                <p class="alerta alert-usuario d-none"></p>
+                
+                <label class="mb-2 mt-4" for="password">Password:</label>
+                <input class="form-control form-control-lg" type="text" id="password" name="usuario" placeholder="Contraseña..." autocomplete="off">
+                <p class="alerta alert-password d-none"></p>
+                
+                <label class="mb-2 mt-4" for="email">Email:</label>
+                <input class="form-control form-control-lg" type="text" id="email" name="email" placeholder="Email..." autocomplete="off">
+                <p class="alerta alert-email d-none"></p>
+                
+                <label class="mb-2 mt-4" for="mensaje">Mensaje:</label>
+                <textarea class="form-control form-control-lg resize-none"></textarea>
+                <p class="alerta d-none mensaje"></p>
+
+                <button type="submit" class="btn btn-outline-primary btn-lg mt-2">Enviar</button>
+            </fieldset>
+        </form>
+        <p class="d-none mensaje-exito alert alert-success fw-bold p-2"></p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
